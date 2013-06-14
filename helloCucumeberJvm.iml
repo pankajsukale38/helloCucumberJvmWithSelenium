@@ -3,7 +3,6 @@
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
-    <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
@@ -35,6 +34,32 @@
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.2" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-support:2.29.0" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:2.29.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium.fluent:fluent-selenium:1.8.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-java:2.32.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-android-driver:2.32.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-htmlunit-driver:2.32.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: net.sourceforge.htmlunit:htmlunit:2.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: xalan:xalan:2.7.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: xalan:serializer:2.7.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: xml-apis:xml-apis:1.4.01" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.commons:commons-lang3:3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.httpcomponents:httpmime:4.2.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: net.sourceforge.htmlunit:htmlunit-core-js:2.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: xerces:xercesImpl:2.10.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: net.sourceforge.nekohtml:nekohtml:1.9.18" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: net.sourceforge.cssparser:cssparser:0.9.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.w3c.css:sac:1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-websocket:8.1.9.v20130131" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-util:8.1.9.v20130131" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-io:8.1.9.v20130131" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-http:8.1.9.v20130131" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-ie-driver:2.32.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-iphone-driver:2.32.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-safari-driver:2.32.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.webbitserver:webbit:0.4.14" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty:3.5.2.Final" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-all:1.3" level="project" />
   </component>
 </module>
 
