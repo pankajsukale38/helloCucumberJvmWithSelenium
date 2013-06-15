@@ -7,7 +7,6 @@ import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.seleniumhq.selenium.fluent.FluentWebDriver;
 import org.seleniumhq.selenium.fluent.FluentWebElement;
 import org.seleniumhq.selenium.fluent.Period;
@@ -18,10 +17,10 @@ public class GoogleStepdefs {
 
     @Before
     public void before() {
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver 2");
-        driver = new ChromeDriver();
+        driver = WebDriverFactory.getSmartChromeDriver();
         fluentWebDriver = new FluentWebDriver(driver);
     }
+
 
     @After
     public void after() {
