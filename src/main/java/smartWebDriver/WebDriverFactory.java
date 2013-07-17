@@ -1,7 +1,9 @@
-package checkGoogle;
+package smartWebDriver;
 
+import org.apache.commons.lang3.SystemUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -33,10 +35,18 @@ public class WebDriverFactory {
             }
         } else {
             System.out.println("SELENIUM_LOCAL");
-            driver = getLocalChromeDriver();
+            if (SystemUtils.IS_OS_WINDOWS) {
+                driver = getLocalInternetExplorerDriver();
+            } else {
+                driver = getLocalChromeDriver();
+            }
         }
 
         return driver;
+    }
+
+    private static WebDriver getLocalInternetExplorerDriver() {
+        return new InternetExplorerDriver();
     }
 
     public static String getSeleniumHubUrl() {

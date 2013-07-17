@@ -33,7 +33,6 @@
         </dependency>
 
 
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-firefox-driver</artifactId>
@@ -51,7 +50,6 @@
         </dependency>
 
 
-
         <dependency>
             <groupId>org.seleniumhq.selenium.fluent</groupId>
             <artifactId>fluent-selenium</artifactId>
@@ -66,6 +64,11 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.1</version>
+        </dependency>
     </dependencies>
 
 </project>

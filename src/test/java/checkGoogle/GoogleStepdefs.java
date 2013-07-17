@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.seleniumhq.selenium.fluent.FluentWebDriver;
 import org.seleniumhq.selenium.fluent.FluentWebElement;
 import org.seleniumhq.selenium.fluent.Period;
+import smartWebDriver.WebDriverFactory;
 
 public class GoogleStepdefs {
     private WebDriver driver;
@@ -56,7 +57,7 @@ public class GoogleStepdefs {
 
     @Entao("^encontro diversos links$")
     public void encontro_diversos_links() throws Throwable {
-        fluentWebDriver.within(Period.secs(10)).title().shouldMatch("^cucumber.*$");
+        fluentWebDriver.within(Period.secs(10)).title().shouldMatch("^Cucumber.*$");
 
         /*
         (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
