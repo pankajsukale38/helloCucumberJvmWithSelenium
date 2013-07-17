@@ -33,13 +33,6 @@ public class GoogleStepdefs {
         driver.get("http://www.google.com");
 
         fluentWebDriver.within(Period.secs(10)).title().shouldBe("Google");
-/*
-        (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
-            public Boolean apply(WebDriver d) {
-                return d.getTitle().toLowerCase().startsWith("google");
-            }
-        });
-*/
     }
 
     @Quando("^pesquiso por Cucumber$")
@@ -47,24 +40,10 @@ public class GoogleStepdefs {
         final FluentWebElement searchTextElement = fluentWebDriver.input(By.name("q"));
         searchTextElement.sendKeys("Cucumber");
         searchTextElement.submit();
-
-        /*
-        WebElement searchTextElement = driver.findElement(By.name("q"));
-        searchTextElement.sendKeys("Cucumber");
-        searchTextElement.submit();
-        */
     }
 
     @Entao("^encontro diversos links$")
     public void encontro_diversos_links() throws Throwable {
         fluentWebDriver.within(Period.secs(10)).title().shouldMatch("^Cucumber.*$");
-
-        /*
-        (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
-            public Boolean apply(WebDriver d) {
-                return d.getTitle().toLowerCase().startsWith("cucumber");
-            }
-        });
-        */
     }
 }
