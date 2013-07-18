@@ -8,6 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public abstract class AbstractWebDriverFactory {
+
     public abstract WebDriver getRemoteWebDriver(String seleniumHubUrl) throws MalformedURLException;
 
     public abstract WebDriver getLocalWebDriver();

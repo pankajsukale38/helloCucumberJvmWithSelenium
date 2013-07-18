@@ -1,0 +1,1 @@
+java -jar selenium-server-standalone-2.33.0.jar -role node -hub http://localhost:4444/grid/register -browser browserName=chrome,maxInstances=5,platform=MAC -Dwebdriver.chrome.driver="./drivers/chromedriver_mac/chromedriver 3"

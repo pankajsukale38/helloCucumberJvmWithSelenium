@@ -1,0 +1,1 @@
+java -jar selenium-server-standalone-2.33.0.jar -role node -hub http://localhost:4444/grid/register -browser browserName=chrome,maxInstances=5,platform=WINDOWS -Dwebdriver.chrome.driver="./chromedriver_win/chromedriver.exe"  -browser "browserName=internet explorer,platform=WINDOWS" -Dwebdriver.ie.driver="./iedriverserver32/IEDriverServer.exe"

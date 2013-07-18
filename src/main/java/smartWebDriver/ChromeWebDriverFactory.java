@@ -8,6 +8,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 
 public class ChromeWebDriverFactory extends AbstractWebDriverFactory {
+    protected static final String DRIVERS_HOME = "./drivers";
+
     @Override
     public WebDriver getRemoteWebDriver(String seleniumHubUrl) throws MalformedURLException {
         DesiredCapabilities capability = DesiredCapabilities.chrome();
@@ -18,11 +20,11 @@ public class ChromeWebDriverFactory extends AbstractWebDriverFactory {
     public WebDriver getLocalWebDriver() {
         String driverUri;
         if (SystemUtils.IS_OS_MAC) {
-            driverUri = "./bin/chromedriver_mac/chromedriver 3";
+            driverUri = DRIVERS_HOME + "/chromedriver_mac/chromedriver 3";
         } else if (SystemUtils.IS_OS_LINUX) {
-            driverUri = "./bin/chromedriver_linux/chromedriver";
+            driverUri = DRIVERS_HOME + "/chromedriver_linux/chromedriver";
         } else if (SystemUtils.IS_OS_WINDOWS) {
-            driverUri = "./bin/chromedriver_win/chromedriver.exe";
+            driverUri = DRIVERS_HOME + "/chromedriver_win/chromedriver.exe";
         } else {
             throw new RuntimeException("Usupported Operationg System [" + SystemUtils.OS_NAME + "]");
         }

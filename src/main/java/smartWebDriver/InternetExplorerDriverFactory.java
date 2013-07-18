@@ -13,9 +13,12 @@ public class InternetExplorerDriverFactory extends AbstractWebDriverFactory {
         return getRemoteWebDriverFromHub(seleniumHubUrl, capability);
     }
 
+
+    public static final String DRIVERS_HOME = ".\\drivers";
+
     @Override
     public WebDriver getLocalWebDriver() {
-        System.setProperty("webdriver.ie.driver", ".\\bin\\iedriverserver32\\IEDriverServer.exe");
+        System.setProperty("webdriver.ie.driver", DRIVERS_HOME + "\\iedriverserver32\\IEDriverServer.exe");
         return new InternetExplorerDriver();
     }
 }
