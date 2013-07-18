@@ -15,7 +15,7 @@ public class InternetExplorerDriverFactory extends AbstractWebDriverFactory {
 
     @Override
     public WebDriver getLocalWebDriver() {
-        System.setProperty("webdriver.id.driver", ".\\bin\\iedriverserver32\\IEDriverServer.exe");
+        System.setProperty("webdriver.ie.driver", ".\\bin\\iedriverserver32\\IEDriverServer.exe");
         return new InternetExplorerDriver();
     }
 }
